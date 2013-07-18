@@ -8,17 +8,6 @@ Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
 
 License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
 */
-@import "bootstrap";
-
-
-/* mininx, vars, etc. */
-$grayMediumLight: #eaeaea;
-
-@mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 @charset "utf-8";
 /* CSS Document */
