@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+<title>jQuery Parallax Plugin Demo</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	$('#nav2').localScroll(800);
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+
+})
+</script>
+</head>
+
+<body>
+	<ul id="nav">
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+ <li><a href="#ewa" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+
+
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+
+
+	    
+	</ul>
+	
+	<div id="intro">
+		<a name="intro"> </a>
+		<div class="story">
+	    	
+	    		<img src="images/1a.png"  />
+			
+	      
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+	
+	<div id="second">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right">
+	            <h1>FEATURES</h1>
+	            
+	           
+	        </div>
+	    </div> <!--.story-->
+	    
+	</div> <!--#second-->
+	
+	<div id="third">
+		<div class="story">
+	    	<div class="float-right">
+	        	<h2>What Happens When JavaScript iss Disabled?</h2>
+	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+
+	
+	<div id="ewa">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h2>What Happens When JavaScript is Disabled?</h2>
+	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	
+	
+	<div id="fifth">
+		<div class="story">
+			<CENTER><h6>GET YOUR SCHOOL ON THE CLOUD</h6>
+		<a class="buttona " href="mailto:javelonagian@orangeapps.ph">Send us an email</a>
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+
+
+	<div id="last">
+	
+<div class="story">
+	<h7>Copyright 2013 OrangeApps © All Rights Reserved. </h7> 
+	    	<ul id="nav2">
+
+	        	
+	           <li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+
+</ul>
+			
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+</body>
+</html>
